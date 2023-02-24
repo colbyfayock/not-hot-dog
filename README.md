@@ -2,7 +2,7 @@
 
 Is it a hot dog?
 
-Demo: <https://not-hot-dog-cloudinary.netlify.app/>
+Demo: <https://not-hot-dog-cloudinary.vercel.app/>
 
 ## What is this?
 

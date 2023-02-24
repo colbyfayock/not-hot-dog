@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Head from 'next/head'
-import { CldImage, CldUploadButton } from 'next-cloudinary';
+import { CldImage, CldUploadButton, CldOgImage } from 'next-cloudinary';
 import styles from '@/styles/Home.module.scss'
 
 interface UploadResults {
@@ -35,8 +35,8 @@ export default function Home() {
   let height: number|undefined = undefined;
 
   if ( typeof uploadResults?.width === 'number' ) {
-    width = uploadResults.width > MAX_WIDTH ? MAX_WIDTH : uploadResults.width;
-    height = uploadResults.height * ( width / uploadResults.width );
+    width = uploadResults.width > MAX_WIDTH ? MAX_WIDTH : Math.round(uploadResults.width);
+    height = Math.round(uploadResults.height * ( width / uploadResults.width ));
   }
 
   function handleOnUpload(result: any, widget: any) {
@@ -52,6 +52,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <CldOgImage src="" /> */}
       <main className={styles.main}>
         <h1 className={styles.title}>Not Hot Dog</h1>
 

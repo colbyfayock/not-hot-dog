@@ -23,10 +23,17 @@
 }
 
 .imageWrapper {
+
   display: inline-block;
   position: relative;
   max-width: 30em;
+  background-color: #efefef;
   margin: 0 2em;
+
+  img {
+    display: block;
+  }
+
 }
 
 .isHotDog,

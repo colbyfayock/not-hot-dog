@@ -1,6 +1,6 @@
 # Not Hot Dog 🌭
 
-Is the picture a hot dog?
+Is it a hot dog?
 
 Demo: <https://not-hot-dog-cloudinary.netlify.app/>
 

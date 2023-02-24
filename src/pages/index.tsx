@@ -56,6 +56,7 @@ export default function Home() {
         width="2400"
         height="1200"
         src="not-hot-dog-assets/not-hot-dog-og"
+        gravity="auto"
         alt="og"
         twitterTitle="Not Hot Dog"
       />

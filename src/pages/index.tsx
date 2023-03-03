@@ -121,6 +121,17 @@ export default function Home() {
           />
         </div>
       </main>
+
+      <footer className={styles.footer}>
+        <div>
+          <p>
+            By <a href="https://twitter.com/colbyfayock">Colby Fayock</a> with <a href="https://nextjs.org/">Next.js</a> &amp; <a href="https://cloudinary.com/">Cloudinary</a>.
+          </p>
+          <p>
+            <a href="https://github.com/colbyfayock/not-hot-dog">View the source</a> or <a href="https://www.youtube.com/watch?v=2hQa_N3ILjM">learn how to build this</a>!
+          </p>
+        </div>
+      </footer>
     </>
   )
 }

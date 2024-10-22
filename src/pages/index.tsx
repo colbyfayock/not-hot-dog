@@ -117,7 +117,8 @@ export default function Home() {
         <div className={styles.upload}>
           <CldUploadButton
             uploadPreset="not-hot-dog"
-            onUpload={handleOnUpload}
+            onSuccess={handleOnUpload}
+            signatureEndpoint="/api/sign-cloudinary-params"
           />
         </div>
       </main>
